@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--main css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<section class="section-app">
+    <div class="container">
+        <div class="error-box">Wrong Input</div>
+        <form class="main-form" id="mainForm">
+            <div class="field-wrapper">
+                <label for="message" class="text-center">Enter your message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" id="ctaAddMessage" value="Add Message">
+        </form>
+
+        <div class="message-box">
+            <h3 class="text-center">Messages</h3>
+            <ul class="message-list" id="messageList">
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--Handlebars-->
+<script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+<!--index.js-->
+<script src="./js/index.js" type="module"></script>
+</body>
+</html>
