@@ -1,0 +1,243 @@
+// _VARIABLES
+$primary_black: #444;
+$primary_white: #fff;
+
+// _BASE
+//reset CSS
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  color: #444444;
+  font-size: 2rem;
+  min-height: 100vh;
+  background-color: cornflowerblue;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+// _TYPOGRAPHY
+.heading-secondary {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.heading-tertiary {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+// _BUTTONS
+#ctaToggleMenu {
+  margin-left: auto;
+
+  @media (min-width: 820px) {
+    display: none;
+  }
+}
+
+.ctaAddToCart {
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.1rem;
+  transition: all .2s;
+
+  &:hover {
+    background-color: #999999;
+    color: white;
+  }
+
+  &:active {
+    background-color: lighten(#999, 10%);
+  }
+}
+
+.cta-clear-cart-item {
+  border: none;
+  background-color: indianred;
+  cursor: pointer;
+  align-self: center;
+  padding: 0 0.7rem;
+  border-radius: .2rem;
+}
+
+// _COMPONENTS
+.container { // Задължително контейнер за центриране и задаване на max-width на съдържанието във всяка една секция
+  max-width: 110rem;
+  margin: 0 auto;
+  //border: 1px solid;
+}
+
+.main-nav-bar {
+  background-color: forestgreen;
+  padding: 0 8rem;
+}
+
+.logo-box {
+  margin: 2rem 0;
+}
+
+.mobile-nav-bar {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.main-nav {
+  flex: 0 0 100%;
+  overflow: hidden;
+  height: 0;
+  @media (min-width: 820px) {
+    flex: 0 0 auto;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__item {
+    list-style: none;
+    margin-right: 2rem;
+    //&:not(:last-of-type) {
+    //  margin-right: 2rem;
+    //}
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 1rem 0;
+    transition: color .2s;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+/* Shop Item*/
+.section-items {
+  padding: 8rem 8rem;
+}
+
+.items-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 0 28%;
+  border: 1px solid #666666;
+  margin-bottom: 3rem;
+
+  &__header {
+
+    img {
+    }
+  }
+
+  &__body {
+    padding: 2rem 1rem;
+  }
+
+  &__price {
+    margin-bottom: 2rem;
+  }
+}
+
+.cart {
+  margin-left: 5rem;
+  position: relative;
+
+  &__item-counter {
+    position: absolute;
+    right: -0.5rem;
+    top: 3px;
+    background-color: white;
+    font-size: 1.3rem;
+    padding: 0 0.4rem;
+    border-radius: 0.2rem;
+  }
+}
+
+.cart-list {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 5.6rem;
+  padding: 1rem 2rem;
+  border-radius: .2rem;
+
+  &__item {
+    display: flex;
+    width: 38rem;
+    list-style: none;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__link {
+    flex: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 3.8rem;
+    display: inline-block;
+    z-index: 10;
+    border: 1rem solid white;
+    transform: rotate(45deg) translateY(-1rem);
+  }
+}
+
+/*Cart-Card*/
+.cart-card {
+  display: flex;
+  align-items: center;
+
+  &__header {
+    flex: 0 0 10rem;
+
+    img {
+      display: inherit;
+    }
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__price {
+  }
+}
+
+// _UTILITIES
+.text-center {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}

@@ -1,0 +1,14 @@
+{{#each items}}
+    <div class="item text-center" data-id="{{id}}">
+        <div class="item__header">
+            <img src="{{imgURL}}" alt="item-img.jpg">
+        </div>
+        <div class="item__body">
+            <h3 class="heading-tertiary">
+                "{{name}}"
+            </h3>
+            <div class="item__price">${{price}}</div>
+            <button class="ctaAddToCart">ADD TO CART</button>
+        </div>
+    </div>
+{{/each}}

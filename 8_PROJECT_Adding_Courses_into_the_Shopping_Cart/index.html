@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--main css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<nav class="main-nav-bar">
+    <div class="container mobile-nav-bar">
+        <a href="#" class="logo-box">
+            LOGO
+        </a>
+
+        <a href="#" id="ctaToggleMenu">
+            X
+        </a>
+
+        <ul class="main-nav">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">About us</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Contacts</a></li>
+        </ul>
+
+        <a href="#" class="cart">
+            <span class="cart__item-counter">0</span>
+            <img src="./pictures/cart.png" alt="cart.png">
+        </a>
+        <ul class="cart-list d-none" data-empty="true">
+            Your cart is empty
+        </ul>
+    </div>
+</nav>
+
+<section class="section-items">
+    <div class="container">
+        <h2 class="heading-secondary">ITEMS</h2>
+
+        <div class="items-box">
+        </div>
+    </div>
+</section>
+
+<script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+<!--index.js-->
+<script src="./js/index.js" type="module"></script>
+</body>
+</html>
