@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--main css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="section-contacts">
+    <h2 class="heading-secondary text-center">SEND US A MESSAGE</h2>
+    <div class="container">
+        <form class="send-message-form">
+            <div class="field-wrapper">
+                <label for="subject" class="subject-label" data-focused="false">Subject:</label>
+                <input type="text" id="subject" class="subject-input">
+            </div>
+            <div class="field-wrapper">
+                <label for="message" class="message-label">Message:</label>
+                <textarea name="message" id="message" class="message-input" cols="30" rows="10"></textarea>
+            </div>
+            <span class="main-form-buttons">
+                <button type="submit" class="cta-send" value="Send" disabled="">Send</button>
+                <button class="cta-reset">Reset</button>
+            </span>
+        </form>
+    </div>
+</section>
+
+<!--scripts-->
+<script src="./js/index.js" type="module"></script>
+</body>
+</html>

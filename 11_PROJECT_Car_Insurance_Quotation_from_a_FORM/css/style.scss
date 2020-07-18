@@ -1,0 +1,134 @@
+// _VARIABLES
+$primary_black: #444;
+$primary_white: #fff;
+
+// _BASE
+//reset CSS
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  color: #444444;
+  font-size: 2rem;
+  min-height: 100vh;
+  background-color: cornflowerblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+// _COMPONENTS
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 110rem;
+  margin: 0 auto;
+  //border: 1px solid;
+}
+
+.section-insurance {
+  padding: 7rem;
+}
+
+.heading-secondary {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.heading-package {
+  margin-bottom: 1rem;
+}
+
+.cta-create-insurance-quote {
+  padding: 1rem;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1rem 1rem rgba($primary_black, .5);
+  margin: 0 auto;
+  padding: 4rem;
+  border-radius: .4rem;
+  width: 50%;
+  background-color: white;
+  position: relative;
+
+  &__select {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #555;
+    padding: .5rem 1rem;
+  }
+}
+
+.select-label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.checkbox-wrapper {
+
+}
+
+// .output-box
+.output-box {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem 3rem;
+  padding-top: 5rem;
+  border: 1px solid;
+  border-radius: .4rem;
+  background-color: white;
+  z-index: -1;
+  transform: translateY(-14rem) translateX(-50%);
+  left: 50%;
+  position: absolute;
+  bottom: -16rem;
+  transition: all 1s;
+}
+
+.summary-list {
+  list-style: none;
+
+  &__item {
+
+  }
+}
+
+.error-box {
+  background-color: indianred;
+  color: darkred;
+  @extend .output-box;
+  z-index: -2;
+  width: 80%;
+  text-align: center;
+}
+
+.output-box-show {
+  transform: translateY(-3rem) translateX(-50%);
+}
+
+.error-box-show {
+  transform: translateY(-9rem) translateX(-50%);
+}

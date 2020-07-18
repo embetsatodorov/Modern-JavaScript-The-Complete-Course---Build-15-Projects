@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Lato, sans-serif;
+}
+
+body {
+  color: #444444;
+  font-size: 2rem;
+  min-height: 100vh;
+  background-color: cornflowerblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading-secondary {
+  padding: 1.2rem 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.section-contacts {
+  padding: 10rem 0;
+}
+
+.send-message-form {
+  width: 60%;
+  padding: 6rem 3rem 3rem 3rem;
+  margin: auto;
+  background-color: white;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+
+.field-wrapper {
+  position: relative;
+}
+.field-wrapper:not(:last-of-type) {
+  margin-bottom: 6rem;
+}
+
+.subject-label, .message-label {
+  display: inline-block;
+  position: absolute;
+  top: 0.4rem;
+  left: 1rem;
+  color: #888;
+  transition: all 0.6s;
+}
+
+.subject-input, .message-input {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border: 1px solid #888;
+  border-radius: 0.2rem;
+  border-bottom: 0.4rem solid #888;
+  font-size: 1.7rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cta-send {
+  padding: 1rem 2rem;
+  margin-right: 3rem;
+}
+
+.cta-reset {
+  padding: 1rem 2rem;
+}
+
+.main-form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.style-input {
+  border-bottom: 0.4rem solid forestgreen;
+}
+
+.style-label {
+  top: -3.2rem;
+  color: forestgreen;
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
